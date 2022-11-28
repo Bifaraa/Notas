@@ -1,0 +1,55 @@
+nav {
+  grid-area: encabezado;
+  grid-row: 1/2;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 3.5em;
+  background-color: #252440;
+  padding: 0 1em 0 1em;
+  box-shadow: -15px 20px 7px black;
+}
+
+nav > .boton {
+  margin: 1em 1em 1em 1em;
+  background-color: #252440;
+  padding: 0.5em 0.5em 0.5em 0;
+  color: #fff;
+  position: relative;
+  
+}
+
+.boton > .link{
+  color: white;
+  text-decoration: none;
+}
+
+.boton:before {
+  position: absolute;
+  bottom: 0;
+  content: "";
+  display: block;
+  width: 0;
+  height: 0.2em;
+  background-color: #fff;
+  transition: all 0.3s;
+}
+
+.boton:hover:before {
+  width: 100%;
+}
+
+
+.contenedor_nav {
+  position: relative;
+}
+
+@media (min-width: 1000px) {
+  nav {
+    width: 40vw;
+    position: absolute;
+    left: 30%;
+    margin-top: 1em;
+  }
+}

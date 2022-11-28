@@ -1,0 +1,16 @@
+.contenedor_notas{
+    grid-area: cuerpo;
+    grid-row: 2/3;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 5em;
+    margin-right: 5em;
+}
+
+.contenedor{
+    display: grid;
+    grid-template-areas:
+    "encabezado"
+    "cuerpo";
+    grid-template-rows: 10vh auto;
+}
